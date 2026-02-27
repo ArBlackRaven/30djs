@@ -1,0 +1,49 @@
+body {
+    width: auto;
+    height: 100vh;
+    background-image: url('assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.buttons-container button {
+    background: #ffffff52;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    transition: all 0.1s ease;
+}
+
+.buttons-container button.active {
+    transform: scale(1.25);
+    border-color: #ffc600;
+    background: #00000000;
+}
+
+.buttons-container button span {
+    font-size: 38px;
+    color: black;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+.buttons-container button.active span {
+    text-shadow: 0px 0px 20px #ffc600;
+    font-size: 60px;
+}
