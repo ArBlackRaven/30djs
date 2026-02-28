@@ -31,6 +31,7 @@ div.hand {
     border-style: solid;
     transform-origin: bottom center;
     transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.28, -1.13, 0.55, 2.05);
     border-radius: 50px;
 }
 
@@ -48,4 +49,5 @@ div.second {
     transform: rotate(0deg);
     border-color: red;
     height: 47%;
+    border-width: 0px 2.5px;
 }
